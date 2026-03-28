@@ -1,7 +1,7 @@
 import cv2
 import matplotlib.pyplot as plt
 
-image = cv2.imread('example.png')
+image = cv2.imread('Spidey.jpg')
 
 image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 plt.imshow(image_rgb)
@@ -13,7 +13,7 @@ plt.imshow(gray_image, cmap='gray')
 plt.title("Grayscale Image")
 plt.show()
 
-cropped_image = image[100:300, 200:400]
+cropped_image = image[300:600, 400:700]
 cropped_rgb = cv2.cvtColor(cropped_image, cv2.COLOR_BGR2RGB)
 plt.imshow(cropped_rgb)
 plt.title("Cropped Region")
